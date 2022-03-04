@@ -1,0 +1,20 @@
+from sonipy.sonify import SonifyTool
+
+A3 = 220
+frequency_args = {
+  'frequency_min' : A3,
+  'frequency_max' : A3*4
+}
+
+duration_args = {
+  'time_total' : 2000
+}
+
+duration_scale = 1. / 2000. # time (ms)
+
+Tone = SonifyTool(student, grade,
+                  frequency_args = frequency_args,
+                  duration_args = duration_args,
+                  bliplength=0.5)
+
+Tone.play()
